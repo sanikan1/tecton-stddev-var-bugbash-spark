@@ -21,7 +21,7 @@ from datetime import datetime, timedelta
     owner='matt@tecton.ai',
     description='User transaction variance and standard deviation over a time window, updated daily.'
 )
-def user_last_transaction_stddev_var(transactions):
+def user_transaction_stddev_var(transactions):
     return f'''
         SELECT
             user_id,
